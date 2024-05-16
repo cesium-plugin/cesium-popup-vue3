@@ -21,7 +21,8 @@
     "lint": "eslint \"**/*.{html,vue,js}\" --fix",
     "stylelint": "stylelint \"**/*.{html,vue,css,sass,scss}\" --fix",
     "hooksinit": "git config core.hooksPath .git/hooks/ && rimraf -rf .git/hooks && npx simple-git-hooks",
-    "postinstall": "npm run hooksinit"
+    "postinstall": "npm run hooksinit",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "cesium": "1.115.0"
@@ -37,6 +38,7 @@
     "cheerio": "^1.0.0-rc.12",
     "eslint": "^8.44.0",
     "eslint-plugin-import": "^2.29.1",
+    "gh-pages": "^4.0.0",
     "eslint-plugin-vue": "^9.15.1",
     "iconv-lite": "^0.6.3",
     "lint-staged": "^13.2.3",
